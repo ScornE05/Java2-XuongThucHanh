@@ -1,0 +1,61 @@
+package xuongj2.z;
+
+public class NhanVien {
+    private String MaNV;
+    private String tenNV;
+    private Boolean gioiTinh;
+    private Integer thamNien;
+
+    public NhanVien() {
+    }
+
+    public NhanVien(String MaNV, String tenNV, boolean gioiTinh, int thamNien) {
+        this.MaNV = MaNV;
+        this.tenNV = tenNV;
+        this.gioiTinh = gioiTinh;
+        this.thamNien = thamNien;
+    }
+
+    public String getMaNV() {
+        return MaNV;
+    }
+
+    public void setMaNV(String MaNV) {
+        this.MaNV = MaNV;
+    }
+
+    public String getTenNV() {
+        return tenNV;
+    }
+
+    public void setTenNV(String tenNV) {
+        this.tenNV = tenNV;
+    }
+
+    public Boolean getGioiTinh() {
+        return gioiTinh;
+    }
+
+    public void setGioiTinh(Boolean gioiTinh) {
+        this.gioiTinh = gioiTinh;
+    }
+
+    public Integer getThamNien() {
+        return thamNien;
+    }
+
+    public void setThamNien(Integer thamNien) {
+        this.thamNien = thamNien;
+    }
+
+    
+    public Integer tinhThuong(){
+        if(thamNien > 12){
+            return 500000;
+        }else{
+            return 200000;
+        }
+    }
+    
+    
+}
